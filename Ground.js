@@ -14,4 +14,10 @@ class Ground {
       fill("brown");
       rect(pos.x, pos.y, this.width, this.height);
     }
+    recreate(x,y,width,height){
+      this.body = Bodies.rectangle(x, y, width, height);
+        this.width = width;
+        this.height = height;
+        this.image = loadImage("sprites/base.png");
+    }
   };
